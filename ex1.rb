@@ -12,7 +12,7 @@ end
 
 
 def deposit(amount)
-@balance = @balance * amount
+@balance = @balance + amount
 end
 
 
