@@ -14,3 +14,13 @@ end
 def deposit(amount)
 @balance = @balance * amount
 end
+
+
+def withdrawl(amount)
+@balance = @balance - amount
+end
+
+def gained_interest(interest)
+@balance = (interest/100.00 +1) * @balance
+end
+end
