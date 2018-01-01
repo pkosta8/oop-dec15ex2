@@ -26,3 +26,15 @@ if @gold_coins % 10 == 0
 level_up
 end
 end
+
+
+
+def do_battle(life)
+@health_points = @health_points - life
+if @health_points < 1
+@lives = @lives - 1
+@health_points = 10
+end
+if @lives == 0
+restart
+end
