@@ -41,3 +41,6 @@ end
 def report
 return "I'm #{@name}, I've delivered #{@experience} papers and I've earned #{@earnings} so far!"
 end
+
+me = Paperboy.new("name")
+puts me.report
