@@ -31,7 +31,7 @@ if total >= 50
 @earnings = 0.25 * total
 counter +=1
 else
-@earnings = @earnings + (@earnings + 0.50 )
+@earnings = @earnings + (@earnings * 0.50 )
 elsif
 @earnings = ( 0.25 * total ) - 2
 end
