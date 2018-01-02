@@ -10,8 +10,6 @@ end
 
 
 
-
-
 def quota
 return 50 + @experience / 2
 end
@@ -25,6 +23,19 @@ latest_payment = calculate_pay(number_of_houses)
 return latest_payment
 end
 
+
+
+
+if total >= 50
+@experience = @experience + ( (total - 50) / 2 )
+@earnings = 0.25 * total
+counter +=1
+else
+@earnings = @earnings + (@earnings + 0.50 )
+elsif
+@earnings = ( 0.25 * total ) - 2
+end
+end
 
 
 def report
